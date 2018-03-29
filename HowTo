@@ -1,0 +1,12 @@
+Go to C:/ on your pc
+git clone repo https://github.com/romanFrontEnd/AgileEngine.git
+check that you have successfully download project by validating it
+Put your html files to C:\AgileEngine\ae-backend-xml-nodejs-snippets\public\js\samples
+Don't forget to specify them in command below -> node index.js ...... --inpt_files="file_name file_name_2" - space delimiter between files
+open windows cmd and go to C:\AgileEngine\ae-backend-xml-nodejs-snippets\public\js\
+type node index.js - you should see notification 'You should specify ..... '
+This means that everything works.
+Now you can run you crawler
+Type: node index.js --id make-everything-ok-button  --cssQuery a[class*="btn-success"] --inpt_files="sample-0-origin.html sample-1-evil-gemini.html sample-2-container-and-clone.html sample-3-the-escape.html sample-4-the-mash.html"
+make-everything-ok-button - is id of element you want to find
+a[class*="btn-success"] - is cssQuery which will help you to find elements
